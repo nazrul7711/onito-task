@@ -1,0 +1,242 @@
+.form {
+  width: 90vw;
+  height: 90vh;
+  box-shadow: 0px 0px 10px rgb(188, 188, 188);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(82, 1fr);
+  grid-template-rows: repeat(23, 1fr);
+}
+.form button {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 2px;
+  text-align: center;
+  border: none;
+}
+
+.form * {
+
+  width: 100%;
+  text-align: start;
+  padding: 5px;
+}
+.form input,.form select{
+  outline:none
+}
+.personalDetails {
+  grid-column: 1/83;
+  grid-row: 1/2;
+}
+.nameLabel {
+  grid-column: 1/6;
+  grid-row: 2/3;
+}
+.name {
+  grid-column: 7/35;
+  grid-row: 2/3;
+}
+.dateOfBirthLabel {
+  grid-column: 37/48;
+  grid-row: 2/3;
+}
+.dateOfBirth {
+  grid-column: 50/65;
+  grid-row: 2/3;
+}
+.sexLabel {
+  grid-column: 68/71;
+  grid-row: 2/3;
+}
+.sexDropdown {
+  grid-column: 72/84;
+  grid-row: 2/3;
+}
+.mobileLabel {
+  grid-column: 1/6;
+  grid-row: 4/5;
+}
+.mobile {
+  grid-column: 7/35;
+  grid-row: 4/5;
+}
+.govtIssueIdLabel {
+  grid-column: 37/48;
+  grid-row: 4/5;
+}
+.govtIdDropdown {
+  grid-column: 50/60;
+  grid-row: 4/5;
+}
+.govtIssueId {
+  grid-column: 62/83;
+  grid-row: 4/5;
+}
+.contactDetails {
+  grid-column: 1/83;
+  grid-row: 6/7;
+}
+.guardianLabel {
+  grid-column: 1/9;
+  grid-row: 7/8;
+}
+.guardianDropdown {
+  grid-column: 11/18;
+  grid-row: 7/8;
+}
+.guardian {
+  grid-column: 19/35;
+  grid-row: 7/8;
+}
+.emailLabel {
+  grid-column: 37/42;
+  grid-row: 7/8;
+}
+.email {
+  grid-column: 43/55;
+  grid-row: 7/8;
+}
+.emergencyContactLabel {
+  grid-column: 58/72;
+  grid-row: 7/8;
+}
+.emergencyContact {
+  grid-column: 73/83;
+  grid-row: 7/8;
+}
+.addressDetails {
+  grid-column: 1/83;
+  grid-row: 9/10;
+}
+.addressLabel {
+  grid-column: 1/6;
+  grid-row: 10/11;
+}
+.address {
+  grid-column: 7/35;
+grid-row: 10/11;
+}
+.stateLabel {
+  grid-column: 37/44;
+grid-row: 10/11;
+}
+
+.stateDropdown {
+  grid-column: 45/56;
+grid-row: 10/11;
+}
+.cityLabel {
+  grid-column: 57/63;
+grid-row: 10/11;
+}
+.cityDropdown {
+  grid-column: 65/83;
+grid-row: 10/11;
+}
+.countryLabel {
+  grid-column: 1/6;
+  grid-row: 12/13;
+}
+.country {
+  grid-column: 7/26;
+grid-row: 12/13;
+}
+.pincodeLabel {
+  grid-column: 37/44;
+grid-row: 12/13;
+}
+.pincode {
+  grid-column: 45/58;
+grid-row: 12/13;
+}
+.otherDetails {
+  grid-column: 1/83;
+  grid-row: 14/15;
+}
+.occupationLabel {
+  grid-column: 1/8;
+  grid-row: 15/16;
+}
+.occupation {
+  grid-column: 9/18;
+ grid-row: 15/16;
+}
+.religionLabel {
+  grid-column: 19/24;
+ grid-row: 15/16;
+}
+.religionDropdown {
+  grid-column: 25/35;
+ grid-row: 15/16;
+}
+.maritalStatusLabel {
+  grid-column: 36/46;
+ grid-row: 15/16;
+}
+.maritalStatusDropdown {
+  grid-column: 47/60;
+ grid-row: 15/16;
+}
+.bloodGroupLabel {
+  grid-column: 62/72;
+ grid-row: 15/16;
+}
+.bloodGroupDropdown {
+  grid-column: 73/83;
+ grid-row: 15/16;
+}
+.nationalityLabel {
+  grid-column: 1/6;
+  grid-row: 17/18;
+}
+.nationality {
+  grid-column: 7/17;
+  grid-row: 17/18;
+}
+.cancelButton {
+  grid-column: 64/72;
+  grid-row: 19/20;
+  background-color: palevioletred;
+  color: white;
+}
+.submitButton {
+  grid-column: 74/83;
+  grid-row: 19/20;
+  background-color: green;
+  color: white;
+}
+.nameError {
+  grid-row: 3/4;
+  grid-column: 7/35;
+}
+.ageError {
+  grid-row: 3/4;
+  grid-column: 50/65;
+}
+.sexError {
+  grid-row: 3/4;
+  grid-column: 72/83;
+}
+.mobileError {
+  grid-row: 5/6;
+  grid-column: 7/35;
+}
+.idError {
+  grid-row: 5/6;
+  grid-column: 50/83;
+}
+.emergencyError {
+  grid-row: 8/9;
+  grid-column: 73/83;
+}
+.emailError{
+  grid-row: 8/9;
+  grid-column: 44/54;
+}
+.emailError,.emergencyError,.idError,.mobileError,.sexError
+,.ageError,.nameError{
+  color: red;
+}
